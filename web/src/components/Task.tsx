@@ -13,11 +13,14 @@ const Task: React.FC = () => {
           className="input-task"
           name="tasklist"
           placeholder="Digite sua Tarefa"
+          maxLength={30}
+          required
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
+        <label htmlFor="nome"></label>
         <button type="submit" className="button-task">
-          adicionar
+          Adicionar
         </button>
 
         <Offtask />

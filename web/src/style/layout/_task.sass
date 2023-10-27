@@ -7,11 +7,14 @@
     padding: 0.4rem
     border: none
     background: transparent
-    color: variablescolor.$font-input    
+    color: variablescolor.$font-input 
+    border-bottom: 3px solid #ccc  
+    transition: 0.5s
     &:focus
-    outline: none
-    border-radius: 2px 
-    border-bottom: 3px solid variablescolor.$bnt-task
+        outline: none
+        border-radius: 3px
+        border-bottom: 3px solid  variablescolor.$bnt-task
+
 
 .button-task
     cursor: pointer
@@ -21,6 +24,12 @@
     border: none
     border-radius: 5px 
     background: variablescolor.$bnt-task
+    color: variablescolor.$font-input
+    transition: all 0.4s ease-in-out
+    &:hover
+        background: #17709634
+        box-shadow: 0 0 10px 0 variablescolor.$bnt-task inset, 0 0 10px 4px variablescolor.$bnt-task
+
 
 .Off
     padding: 20px 0px 0px
