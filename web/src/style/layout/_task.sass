@@ -6,6 +6,7 @@
     width: 100%
     padding: 0.4rem
     border: none
+    border-radius: 4px
     background: transparent
     color: variablescolor.$font-input 
     border-bottom: 3px solid #ccc  
@@ -13,14 +14,15 @@
     &:focus
         outline: none
         border-radius: 3px
-        border-bottom: 3px solid  variablescolor.$bnt-task
+        border-bottom: 3px solid variablescolor.$bnt-task
+        box-shadow: 0 0 0 0 variablescolor.$bnt-task inset, 0 0 5px 2px variablescolor.$bnt-task
 
 
 .button-task
     cursor: pointer
     margin-top: 10px 
     width: 100%
-    padding: 0.4rem
+    padding: 0.7rem
     border: none
     border-radius: 5px 
     background: variablescolor.$bnt-task
