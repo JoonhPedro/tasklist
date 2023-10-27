@@ -1,13 +1,15 @@
+@use './_variablescolor'
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
 body
-    background: linear-gradient(#6a93d1,#082f49)
+    background: linear-gradient(variablescolor.$bodyl1,variablescolor.$bodyl2)
     display: flex
     align-items: center
     justify-content: center
     height: 100vh
-
-    
+h1
+    color: variablescolor.$font-color
+    padding: 0 0 0.9rem 0  
