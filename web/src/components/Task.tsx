@@ -33,7 +33,7 @@ const Task: React.FC = () => {
             className="input-task"
             name="tasklist"
             placeholder="Digite sua Tarefa"
-            maxLength={35}
+            maxLength={42}
             required
             value={list}
             onChange={(e) => setList(e.target.value)}
