@@ -32,12 +32,21 @@
         background: #17709634
         box-shadow: 0 0 10px 0 variablescolor.$bnt-task inset, 0 0 10px 4px variablescolor.$bnt-task
 
+.list-task
+    li
+        animation-name: listtask
+        animation-duration: 1s
+
+
 
 .Off
     padding: 50px 50px 50px
     color: variablescolor.$font-input
     text-align: center
-
+    h3
+        color: variablescolor.$font-color
+        animation-name: catmovement
+        animation-duration: 2s
 
 .button-delete
     background: transparent
@@ -46,4 +55,15 @@
     height: 22px
     color: red
     cursor: pointer
-    
+
+@keyframes listtask 
+    from
+        transform: scaleY(0)
+    to
+        transform: scaleY(1)
+
+@keyframes catmovement 
+    from
+        transform: translateX(-50px)
+    to
+        transform: translateX(0)

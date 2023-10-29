@@ -6,7 +6,7 @@ const Offtask: React.FC = () => {
   return (
     <>
       <div className="Off">
-        <h3>Sem Tarefa no momento</h3>
+        <h3>Momento desprovido de obrigações</h3>
       </div>
     </>
   )

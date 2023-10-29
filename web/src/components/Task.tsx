@@ -27,7 +27,7 @@ const Task: React.FC = () => {
             addTask()
           }}
         >
-          <h1>Lista de Tarefa</h1>
+          <h1>Lista de Tarefas</h1>
           <input
             type="text"
             className="input-task"
@@ -45,7 +45,7 @@ const Task: React.FC = () => {
         {task.length === 0 ? <Offtask /> : true}
 
         {task.length > 0 && (
-          <ol>
+          <ol className="list-task">
             {task.map((todo, index) => (
               <li key={index}>
                 {todo}

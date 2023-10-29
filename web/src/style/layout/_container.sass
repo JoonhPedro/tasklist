@@ -2,11 +2,20 @@
 
 
 .container
-    min-width: 500px
-    max-width: 600px
-    height: auto
+    min-width: 400px
+    max-width: 400px
+    max-height: 1000px
     padding: 2rem
     background-color: variablescolor.$container
     border: 2px solid variablescolor.$bnt-task
     border-radius: 15px
     box-shadow: 10px 5px 10px 1px variablescolor.$container
+    animation-name: container
+    animation-duration: 3s
+
+@keyframes container
+    from
+        opacity: 0
+    to
+        opacity: 1
+
