@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
-
 import Offtask from './Offtask'
 
 const Task: React.FC = () => {
   const [list, setList] = useState('')
-  const [tasks, setTasks] = useState<string[]>([])
+  const [task, setTask] = useState<string[]>([])
 
   const addTask = () => {
     if (list.trim()) {
-      setTasks([...tasks, list.trim()])
+      setTask([...task, list.trim()])
       setList('')
     }
   }
 
   const removeTask = (index: number) => {
-    const updatedTasks = [...tasks]
+    const updatedTasks = [...task]
     updatedTasks.splice(index, 1)
-    setTasks(updatedTasks)
+    setTask(updatedTasks)
   }
 
   return (
@@ -43,22 +42,23 @@ const Task: React.FC = () => {
             Adicionar
           </button>
         </form>
+        {task.length === 0 ? <Offtask /> : true}
 
-        <ol>
-          {tasks.map((todo, index) => (
-            <li key={index}>
-              {todo}
-              <button
-                className="button-delete"
-                onClick={() => removeTask(index)}
-              >
-                X
-              </button>
-            </li>
-          ))}
-        </ol>
-
-        <Offtask />
+        {task.length > 0 && (
+          <ol>
+            {task.map((todo, index) => (
+              <li key={index}>
+                {todo}
+                <button
+                  className="button-delete"
+                  onClick={() => removeTask(index)}
+                >
+                  X
+                </button>
+              </li>
+            ))}
+          </ol>
+        )}
       </div>
     </>
   )
