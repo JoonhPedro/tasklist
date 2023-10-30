@@ -20,26 +20,22 @@ Clone este repositório:
 
 <ol>
     <li>Clone este repositório:</li>
-
-bash - Copy code
+<br>
     
     git clone https://github.com/JoonhPedro/tasklist.git
 
 <li>Navegue até o diretório do projeto:</li>
-
-bash - Copy code
+<br>
     
     cd tasklist/web
 
 <li>Instale as dependências: </li>
-
-bash - Copy code
+<br>
 
     npm install
 
 <li>Inicie a aplicação:</li>
-
-bash-Copy code
+<br>
     
     npm run dev
 
