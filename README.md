@@ -1,5 +1,5 @@
 # TaskList
-    TaskList é uma aplicação simples de lista de tarefas desenvolvida em React.
+TaskList é uma aplicação simples de lista de tarefas desenvolvida em React.
 
 #   Tecnologias Utilizadas
 
