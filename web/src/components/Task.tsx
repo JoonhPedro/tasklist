@@ -12,9 +12,9 @@ const Task: React.FC = () => {
     }
   }
 
-  const removeTask = (index: number) => {
+  const removeTask = (tolist: number) => {
     const updatedTasks = [...task]
-    updatedTasks.splice(index, 1)
+    updatedTasks.splice(tolist, 1)
     setTask(updatedTasks)
   }
 
@@ -33,7 +33,7 @@ const Task: React.FC = () => {
             className="input-task"
             name="tasklist"
             placeholder="Digite sua Tarefa"
-            maxLength={42}
+            maxLength={30}
             required
             value={list}
             onChange={(e) => setList(e.target.value)}
@@ -46,12 +46,12 @@ const Task: React.FC = () => {
 
         {task.length > 0 && (
           <ol className="list-task">
-            {task.map((todo, index) => (
-              <li key={index}>
+            {task.map((todo, tolist) => (
+              <li key={tolist}>
                 {todo}
                 <button
                   className="button-delete"
-                  onClick={() => removeTask(index)}
+                  onClick={() => removeTask(tolist)}
                 >
                   X
                 </button>
