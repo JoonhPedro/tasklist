@@ -44,4 +44,4 @@ Abra seu navegador e acesse o localhost
 
 # Layout do Projeto
 
-<div> <img src=''><div>
+![projetotasklist](https://github.com/JoonhPedro/tasklist/assets/103079429/8daf7a8a-2514-4a15-8ed4-a3ca376da90a)
