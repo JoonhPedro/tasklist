@@ -44,4 +44,7 @@ Abra seu navegador e acesse o localhost
 
 # Layout do Projeto
 
-![projetotasklist](https://github.com/JoonhPedro/tasklist/assets/103079429/8daf7a8a-2514-4a15-8ed4-a3ca376da90a)
+
+![projetotasklist](https://github.com/JoonhPedro/tasklist/assets/103079429/63c1ad2e-5155-42d6-a574-1e22397637bf)
+
+
