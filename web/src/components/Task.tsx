@@ -18,11 +18,11 @@ const Task: React.FC = () => {
     }
   }
   // Função que remove a lista de tarefa existente
-  const removeTask = (tolist: number) => {
+  const removeTask = (index: number) => {
     // Cria uma cópia da lista de tarefas
     const updatedTasks = [...task]
     // Remove a tarefa com o índice 'toList'
-    updatedTasks.splice(tolist, 1)
+    updatedTasks.splice(index, 1)
     // Atualiza o estado com a lista de tarefas atualizada
     setTask(updatedTasks)
   }
