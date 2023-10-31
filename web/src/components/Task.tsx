@@ -63,12 +63,12 @@ const Task: React.FC = () => {
         {task.length > 0 && (
           <ol className="list-task">
             {/* Mapeia a lista de tarefas e renderiza cada item o botão de apagar a task */}
-            {task.map((todo, tolist) => (
-              <li key={tolist}>
+            {task.map((todo, index) => (
+              <li key={index}>
                 {todo}
                 <button
                   className="button-delete"
-                  onClick={() => removeTask(tolist)}
+                  onClick={() => removeTask(index)}
                 >
                   X
                 </button>
